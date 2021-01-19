@@ -44,7 +44,12 @@ ggplot(data = diamonds, aes(x = clarity, y = cut)) +
 ```
 
 ```{r break-it-2}
+ggplot(data = diamonds, aes(x = cut, y = color)) +
+  geom_point() +
+  theme_bw()
 
+
+#this is the best graph ever again
 ```
 
 ## END Discussion 3
