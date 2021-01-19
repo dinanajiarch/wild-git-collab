@@ -35,9 +35,12 @@ ggplot(data = diamonds, aes(x = color, y = carat) +
 ## PART B: Make problems
 
 ```{r break-it-1}
-ggplot(data = diamonds, aes(x = depth, y = carat)) +
+ggplot(data = diamonds, aes(x = clarity, y = cut)) +
   geom_point() +
-  theme_void()
+  theme_minimal()
+
+
+#this is the best graph ever
 ```
 
 ```{r break-it-2}
