@@ -53,7 +53,10 @@ ggplot(data = diamonds, aes(x = clarity, y = cut)) +
 ```
 
 ```{r break-it-2}
-
+best_diamonds <- diamonds %>% 
+  filter(cut == "Premium") %>% 
+  filter(carat > 3, price > 1000) %>% 
+  select(c(carat, cut, price))
 ```
 
 ## END Discussion 3
